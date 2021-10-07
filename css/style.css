@@ -1,0 +1,122 @@
+*{margin: 0;padding: 0;}
+.card {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #eee;
+	position: relative;
+	padding-top: 70px;
+}
+
+.card-front , .card-back {
+	width: 550px;
+	height: 320px;
+	box-sizing: border-box;
+	padding: 40px 0 15px 20px;
+	position: relative;
+	margin: 10px 5px;
+	display: none;
+}
+.card-back {
+	background: url('../images/cardfront.png') no-repeat center center / cover;
+}
+.card-front {
+	background: url('../images/cardback.png') no-repeat center center / cover;
+}
+.card-front .card-profession {
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 65px;
+	margin-left: 45px;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+}
+.card-title {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	padding: 1rem;
+	font-size: 1.2rem;
+	background-color: #222;
+	color: #ffffff;
+	transform: translateX(-50%);
+}
+.buttons {
+	margin: 30px 0;
+}
+.btn {
+	width: 100px;
+	height: 40px;
+	background-color: #1b1b1b;
+	color: #fff;
+	outline: none;
+	border: 2px solid transparent;
+	transition: 0.4s;
+	cursor: pointer;
+}
+.btn.active {
+	color: #1b1b1b;
+	border: 2px dashed #1b1b1b;
+	background-color: transparent;
+}
+.btn:hover {
+	color: #1b1b1b;
+	border: 2px dashed #1b1b1b;
+	background-color: transparent;
+} 
+.card-fullname {
+	color: #ffffff;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-bottom: 3px;
+	letter-spacing: 0.05rem;
+}
+.card-profession {
+	color: #cdcdcd;
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+}
+.line {
+	width: 225px;
+	height: 3px;
+	background: linear-gradient(90deg, #ffffff 60%, #ff0000 40%);
+	display: block;
+	margin: 12px 0 20px;
+}
+.card-ul {
+	list-style: none;
+}
+.card-link {
+	color: #ffffff;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	margin: 15px 0 15px 15px;
+}
+.card-link:hover {
+	color: #ffffff;
+}
+.card-link-text:hover {
+	color: #cdcdcd;
+}
+.card-link-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #6e1d1d,#ff6969);
+	margin-right: 15px;
+}
+.card-qr {
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.card-qr img {
+	width: 100%;
+}
